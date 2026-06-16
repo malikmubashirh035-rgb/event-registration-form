@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="form-card">
+            <header class="form-header">
+                <h1 class="heading">Event Registration</h1>
+                <p class="subheading">Secure your spot by filling out the details below.</p>
+            </header>
+
+            <form action="#" method="POST" class="registration-form">
+
+                <div class="form-group">
+                    <label for="full-name" class="form-label">Full Name</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="full-name" placeholder="Enter Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder="Enter  Email Address" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-number" class="form-label">Contact Number</label>
+                    <div class="input-wrapper">
+                        <input type="tel" id="contact-number" placeholder="Enter cell number" required>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="event-date" class="form-label">Event Date</label>
+                        <input type="date" id="event-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-time" class="form-label">Event Time</label>
+                        <input type="time" id="event-time" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-type" class="form-label">Event Type</label>
+                    <input type="text" id="event-type" placeholder="e.g., Annual Conference, Wedding" required>
+                </div>
+
+                <div class="form-group">
+                    <span class="form-label">Gender</span>
+                    <div class="gender-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Male" checked>
+                            <span class="custom-radio"></span> Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Female">
+                            <span class="custom-radio"></span> Female
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Other">
+                            <span class="custom-radio"></span> Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="agreed" value="yes" required>
+                        <label for="agreed" class="checkbox-label">I accept all terms and conditions.</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment" class="form-label">Comments & Questions</label>
+                    <textarea id="comment" rows="4"
+                        placeholder="Type your questions or special requests here..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Submit
+                    </button>
+                    <button type="reset" class="btn btn-reset">
+                        <i class="fa-solid fa-rotate-right"></i> Reset
+                    </button>
+                </div>
+            </form>
+
+            <div class="success-box">
+                <img src="/Assignment no 10/ThankYou.jpg" alt="Thank You confirmation graphic" class="success-img">
+                <p class="success-text">Submitted Successfully!</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
